@@ -6,7 +6,7 @@ import "./styles/styles.scss"
 import { getAllTeachers } from './Redux/actionCreators';
 import App from './Components/App';
 
-store.dispatch(getAllTeachers())
+// store.dispatch(getAllTeachers())
 
 ReactDOM.render(
   <React.StrictMode>

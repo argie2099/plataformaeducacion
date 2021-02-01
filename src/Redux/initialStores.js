@@ -4,7 +4,8 @@ export const postStore = {
 }
 
 export const courseStore = {
-  courses: []
+  courses: [],
+  courseData: []
 }
 
 export const specialityStore = {

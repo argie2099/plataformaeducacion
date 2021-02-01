@@ -1,23 +1,23 @@
 import { GET_ALL_COURSES, 
          GET_ALL_POST, 
          GET_ALL_SPECIALITIES, 
-         GET_ALL_TEACHERS, 
+         GET_ALL_TEACHERS,
          GET_SINGLE_CLASS, 
          GET_SINGLE_COURSE, 
          GET_SINGLE_POST, 
          GET_SINGLE_SPECIALITY } from "./actions"
 import { classStore, courseStore, postStore, specialityStore, teacherStore } from "./initialStores"
 
-export const postReducer = (state = postStore, {type, data}) => {
+export const postReducer = (state = postStore, {type, posts}) => {
   if (type === GET_ALL_POST) {
     return {
       ...state,
-      posts: data
+      posts: posts
     }
   }
 
   if (type === GET_SINGLE_POST) {
-    return(state.posts[data])
+    return(state.posts[posts.id])
   }
   
   return state
@@ -32,9 +32,12 @@ export const courseReducer = (state = courseStore, {type, data}) => {
   }
 
   if (type === GET_SINGLE_COURSE) {
-    return state.courses[data]
+    return {
+      ...state,
+      courseData: data
+    }
   }
-  
+
   return state
 }
 

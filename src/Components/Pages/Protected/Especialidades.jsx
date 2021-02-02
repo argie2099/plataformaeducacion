@@ -26,9 +26,9 @@ const Especialidades = ({especialidades}) => {
             <CourseCard 
             name={e.data.name} 
             picture={e.data.picture}
-            general_route="especialidad"
-            urlname={e.data.url_name}
+            general_route="especialidades"
             key={e.data.id}
+            iden={e.data.slug}
             />
           )
         })

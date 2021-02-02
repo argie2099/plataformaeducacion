@@ -31,7 +31,7 @@ const Cursos = ({courses}) => {
               name={c.name}
               picture={c.picture}
               key={c.id}
-              iden={c.id}
+              iden={c.slug}
               general_route="curso" />
             )
           }

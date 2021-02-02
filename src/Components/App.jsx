@@ -1,6 +1,4 @@
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
-import { getIndexList } from '../Redux/actionCreators';
-import store from '../Redux/store';
 import Nav from './Organisms/Nav';
 import Page404 from './Pages/Page404';
 import Clase from './Pages/Protected/Clase';
@@ -16,8 +14,6 @@ import Protected from './Routes/Protected';
 import Public from './Routes/Public';
 
 
-store.dispatch(getIndexList())
-
 const App = () => (
   <Router >
     <Nav />
@@ -26,7 +22,7 @@ const App = () => (
       <Protected path="/especialidades" exact component={Especialidades} />
       <Protected path="/especialidades/:id" component={Especialidad} />
       <Protected path="/cursos" exact component={Cursos} />
-      <Protected path="/curso/:id" component={Curso} />
+      <Protected path="/curso/:urlname" component={Curso} />
       <Protected path="/profesores" exact component={Profesores} />
       <Protected path="/clase/:id" exact component={Clase} />
 

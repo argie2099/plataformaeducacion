@@ -17,7 +17,7 @@ const BannerWeb = ({Title, Subtitle, bg, img, home, isCourse, color}) => {
                     <Link to="/cursos" className="button accent-color">Ver cursos</Link>
                   </div>
                 </div>
-                <div className="img-container s-ratio-16-9">
+                <div className="img-container s-ratio-16-9 s-radius">
                   <Link to="/cursos">
                     <img src={img} alt="Curso actual" />
                   </Link>
@@ -30,7 +30,7 @@ const BannerWeb = ({Title, Subtitle, bg, img, home, isCourse, color}) => {
                     <h1 className="main-banner__title">{Title}</h1>
                     <p>{Subtitle}</p>
                 </div>
-                <div className="img-container s-ratio-16-9 m-cols-1">
+                <div className="img-container s-ratio-16-9 m-cols-1 s-radius-1">
                     <img src={img} alt="Curso actual" />
                 </div>
               </div>

@@ -17,10 +17,7 @@ const Cursos = ({courses}) => {
       <BannerWeb
         Title='Cursos'
         Subtitle='Domina las mejores tecnologías junto con los mejores profesores'
-        img={{
-          src:'https://i.blogs.es/fd396a/hook/1366_2000.jpg',
-          alt: 'Banner cursos'
-        }}
+        bg="https://i.blogs.es/fd396a/hook/1366_2000.jpg"
       />
       {
         courses &&

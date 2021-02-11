@@ -7,7 +7,7 @@ import Publication from '../../Organisms/Publication';
 
 
 
-const Home = ({ posts }) => {
+const Home = ({posts}) => {
 
   useEffect(() => {
     store.dispatch(getAllPost())
@@ -27,16 +27,16 @@ const Home = ({ posts }) => {
       <main className="ed-grid m-grid-3">
         <div className="l-section m-cols-2">
           <h2>Ultimas publicaciones</h2>
-          <div className="">
+          <div>
             {
               posts ?
-              <div className="">{ posts.map(p => <Publication
-                                                  author={p.author}
-                                                  content={p.content}
-                                                  date={p.fecha}
-                                                  key={p.id}
-                                                  title={p.title}
-                                                  />)}</div>
+              <div>{ posts.map(p => <Publication
+               author={p.author}
+               content={p.content}
+               date={p.fecha}
+               key={p.id}
+               title={p.title}
+               />)}</div>
               :
               <span>No hay posts de la comunidad.</span>
             }

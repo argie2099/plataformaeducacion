@@ -5,6 +5,7 @@ import { GET_ALL_COURSES, GET_ALL_POST, GET_ALL_SPECIALITIES, GET_ALL_TEACHERS, 
 const API_URL = process.env.REACT_APP_API_URL
 
 export const getAllPost = () => dispatch => {
+  console.log(process.env.REACT_APP_API_URL, API_URL);
   axios.get(`${API_URL}/posts`)
   .then(res => {
     return dispatch({

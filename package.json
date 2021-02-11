@@ -7,7 +7,6 @@
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
     "axios": "^0.21.1",
-    "ed-grid": "^3.0.2",
     "edteam-style-guides": "^0.0.79",
     "node-sass": "4.14.1",
     "react": "^17.0.1",
